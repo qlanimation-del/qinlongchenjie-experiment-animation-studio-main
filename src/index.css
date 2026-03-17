@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    /* Pure black/white/gray palette */
+    --background: 240 6% 10%;
+    --foreground: 0 0% 75%;
+
+    --card: 240 5% 12%;
+    --card-foreground: 0 0% 75%;
+
+    --popover: 240 5% 14%;
+    --popover-foreground: 0 0% 75%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 240 6% 10%;
+
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 0 0% 70%;
+
+    --muted: 240 4% 20%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 0 0% 85%;
+    --accent-foreground: 240 6% 10%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 0 0% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5% 9%;
+    --sidebar-foreground: 0 0% 75%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 240 5% 11%;
+    --sidebar-accent: 240 4% 17%;
+    --sidebar-accent-foreground: 0 0% 78%;
+    --sidebar-border: 240 3% 18%;
+    --sidebar-ring: 0 0% 60%;
+    --chart-1: 0 0% 90%;
+    --chart-2: 0 0% 70%;
+    --chart-3: 0 0% 54%;
+    --chart-4: 240 3% 30%;
+    --chart-5: 240 3% 22%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior-y: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
