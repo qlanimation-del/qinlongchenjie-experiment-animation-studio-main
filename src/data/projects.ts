@@ -190,12 +190,12 @@ export const projects: Project[] = [
       fr: "Un voyage abstrait en motion design à travers le son et la couleur. Chaque battement déclenche une explosion visuelle de formes géométriques et de particules fluides.",
     },
     credits: {
-      en: ["Director: QinLong", "Client: Beijing Forestry University", "Artist: QinLong", "Animation: QinLong"],
+      en: ["Director: QinLong", "Beijing Forestry University-Admissions Office", "Artist: QinLong", "Animation: QinLong"],
       zh: ["导演：秦龙", "客户：北京林业大学", "艺术家：秦龙", "动画：秦龙"],
       fr: ["Réalisateur : QinLong", "Client : Université forestière de Pékin", "Artiste : QinLong", "Animation : QinLong"],
     },
     glowColor: "#00FF88",
-    client: { en: "Beijing Forestry University", zh: "北京林业大学", fr: "Université forestière de Pékin" },
+    client: { en: "Beijing Forestry University-Admissions Office", zh: "北京林业大学", fr: "Université forestière de Pékin" },
     crew: { en: "QinLong", zh: "秦龙", fr: "QinLong" },
     parallaxLayers: [
       { src: project4, speed: 0.1 },
